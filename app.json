@@ -1,0 +1,16 @@
+{
+  "name": "Sshwifty",
+  "description": "Sshwifty Web SSH & Telnet Client",
+  "keywords": ["Sshwifty","SSH"],
+  "repository": "https://github.com/zwypfdsj/sshwifty-heroku",
+  "env": {
+    "SSHWIFTY_SHAREDKEY": {
+       "description": "WEB ACCESS PASSWORD",
+       "value": "password"
+    },
+    "SSHWIFTY_LISTENPORT": {
+       "value": "SSHWIFTY_ENV_RENAMED:PORT"
+    }
+  },
+  "stack": "container"
+}
