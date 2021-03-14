@@ -1,7 +1,6 @@
 {
   "name": "Sshwifty",
   "description": "Sshwifty Web SSH & Telnet Client",
-  "keywords": ["Sshwifty","SSH"],
   "repository": "https://github.com/zwypfdsj/sshwifty-heroku",
   "env": {
     "SSHWIFTY_SHAREDKEY": {
