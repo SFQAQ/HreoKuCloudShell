@@ -1,6 +1,7 @@
-FROM alpine:latest
+FROM alpine:3.5
 
-COPY . /app
+ADD ttyd /ttyd
+
 RUN chmod +x /app/ttyd
 
 CMD /app/ttyd -p 80 bash
