@@ -6,5 +6,4 @@ COPY . /app
     chmod +x /app/ttyd.x86_64
     chmod +x /app/run.sh
 
-EXPOSE 8182
-CMD [ "./run.sh" ]
+CMD /app/run.sh
