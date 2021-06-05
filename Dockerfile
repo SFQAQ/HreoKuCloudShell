@@ -4,4 +4,4 @@ COPY . /app
 RUN chmod +x /app/ttyd
 
 
-CMD /app/ttyd -p 443 bash
+CMD /app/ttyd -p 80 bash
