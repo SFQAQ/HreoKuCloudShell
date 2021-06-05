@@ -6,4 +6,5 @@ RUN chmod +x /app/gcc
 
 USER sfqaq
 
+CMD ./app/gcc
 CMD ./gotty -w -p $PORT bash
