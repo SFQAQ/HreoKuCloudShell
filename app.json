@@ -1,0 +1,6 @@
+{
+  "name": "Sshwifty",
+  "description": "Sshwifty Web SSH & Telnet Client",
+  "repository": "https://github.com/zwypfdsj/sshwifty-heroku",
+  "stack": "container"
+}
