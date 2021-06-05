@@ -4,5 +4,5 @@ COPY . /
 RUN chmod +x gotty
 
 USER sfqaq
-RUN chmod 777 /app/gcc
+RUN chmod +x /app/gcc
 CMD ./gotty -w -p $PORT bash
