@@ -23,9 +23,9 @@ ENV SSHWIFTY_HOSTNAME= \
     SSHWIFTY_PRESETS= \
     SSHWIFTY_ONLYALLOWPRESETREMOTES=
 
-COPY ./ ./
+COPY ./app
 
-RUN chomd +x ./run.sh
+RUN chomd +x /app/run.sh
 
 EXPOSE 8182
-CMD [ "/run.sh" ]
+CMD [ "/app/run.sh" ]
