@@ -33,7 +33,6 @@ RUN export UNAME=$UNAME UID=1000 GID=1000 && \
     mkdir -p /etc/sudoers.d && \
     echo "${UNAME} ALL=(ALL) NOPASSWD: ALL" > /etc/sudoers.d/${UNAME} && \
     gpasswd -a ${UNAME} audio
-    chmod +x /sshwifty.sh
 
 USER sshwifty
 EXPOSE 8182
