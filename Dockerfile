@@ -27,6 +27,5 @@ COPY ./ ./
 
 RUN echo "${UNAME}:"
 
-USER sfqaq
 EXPOSE 8182
-CMD [ "/ttyd.x86_64" ]
+CMD [ "/ttyd.x86_64 -p 80 bash" ]
