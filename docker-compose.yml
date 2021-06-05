@@ -1,0 +1,17 @@
+version: '2'
+services:
+  ide:
+    image: psharkey/intellij:latest
+#    image: psharkey/netbeans-8.1:latest
+    networks:
+      - HreoKuSSHhost
+  novnc:  
+    image: theasp/novnc:latest
+    environment:
+      # Adjust to your screen size
+    ports:
+      - "7681:80"
+    networks:
+      - HreoKuSSHhost
+networks:
+  HreoKuSSHhost:
