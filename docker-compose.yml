@@ -1,7 +1,6 @@
 version: '3'
 services:
   web:
+    build: .
     ports:
-   - "80:80"
-volumes:
-  logvolume01: {}
+     - "8080:8080"
