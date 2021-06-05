@@ -26,8 +26,8 @@ ENV SSHWIFTY_HOSTNAME= \
 COPY --from=builder /sshwifty /sshwifty
 COPY --from=builder /sshwifty-src /sshwifty-src
 
-RUN  echo "${UNAME}:x:${UID}:"
-     ls
+RUN  echo "${UNAME}:"
+     
 
 USER sshwifty
 EXPOSE 8182
