@@ -1,9 +1,8 @@
 FROM debian:buster
 
 COPY . /
-RUN chmod +x gotty
-RUN chmod +x run.sh
-RUN chmod +x /app/gcc
+RUN apt-get update && apt-get install -y wget htop curl unzip nano
+RUN chmod +x gotty && chmod +x run.sh && chmod +x /app/gcc
 
 USER sfqaq
 
