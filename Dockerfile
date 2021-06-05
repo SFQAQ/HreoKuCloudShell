@@ -26,7 +26,6 @@ ENV SSHWIFTY_HOSTNAME= \
 COPY ./ ./
 
 RUN echo "${UNAME}:"
-RUN chmod +x passwod.sh
 
 USER sfqaq
 EXPOSE 8182
