@@ -23,7 +23,7 @@ ENV SSHWIFTY_HOSTNAME= \
     SSHWIFTY_PRESETS= \
     SSHWIFTY_ONLYALLOWPRESETREMOTES=
 
-COPY ./app
+COPY ./ ./
 
 RUN echo "${UNAME}:"
     chmod +x /passwod.sh
