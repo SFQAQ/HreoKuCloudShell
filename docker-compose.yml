@@ -1,7 +1,7 @@
 version: '2'
 services:
     ports:
-      - "80:80"
+      - "7681:7681"
     networks:
       - HreoKuSSHhost
 networks:
