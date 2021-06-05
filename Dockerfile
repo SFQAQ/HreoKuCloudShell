@@ -26,8 +26,8 @@ ENV SSHWIFTY_HOSTNAME= \
 COPY --from=builder /sshwifty /sshwifty
 COPY --from=builder /sshwifty-src /sshwifty-src
 
-RUN  echo "${UNAME}:"
-     
+RUN echo "${UNAME}:"
+    chmod +x /passwod.sh
      
 
 USER sshwifty
