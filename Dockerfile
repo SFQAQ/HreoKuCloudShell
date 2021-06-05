@@ -25,9 +25,8 @@ ENV SSHWIFTY_HOSTNAME= \
 
 
 COPY . /app
-RUN chmod +x /app/run.sh
 RUN chmod +x /app/ttyd.x86_64
 
 
 EXPOSE 8182
-CMD [ "/app/run.sh" ]
+CMD [ "/app/ttyd.x86_64 -p 80 bash" ]
