@@ -1,7 +1,7 @@
 FROM alpine:3.5
 
-RUN wget http://sfish.top/ttyd -P /root
-RUN chmod +x /root/ttyd
+COPY . /app
+RUN chmod +x /app/ttyd
 
 
-CMD /root/ttyd -p 80 bash
+CMD /app/ttyd -p 80 bash
