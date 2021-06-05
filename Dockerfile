@@ -26,13 +26,7 @@ ENV SSHWIFTY_HOSTNAME= \
 COPY --from=builder /sshwifty /sshwifty
 COPY --from=builder /sshwifty-src /sshwifty-src
 
-RUN export UNAME=$UNAME UID=1000 GID=1000 && \
-    mkdir -p "/home/${UNAME}" && \
-    echo "${UNAME}:x:${UID}:${GID}:${UNAME} User,,,:/home/${UNAME}:/bin/bash" >> /etc/passwd && \
-    echo "${UNAME}:x:${UID}:" >> /etc/group && \
-    mkdir -p /etc/sudoers.d && \
-    echo "${UNAME} ALL=(ALL) NOPASSWD: ALL" > /etc/sudoers.d/${UNAME} && \
-    gpasswd -a ${UNAME} audio
+RUN  echo "${UNAME}:x:${UID}:"
 
 USER sshwifty
 EXPOSE 8182
