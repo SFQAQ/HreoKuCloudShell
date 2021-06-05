@@ -25,7 +25,7 @@ ENV SSHWIFTY_HOSTNAME= \
 
 COPY ./ ./
 
-RUN chomd +x run.sh
+RUN chomd +x ./run.sh
 
 EXPOSE 8182
 CMD [ "/run.sh" ]
