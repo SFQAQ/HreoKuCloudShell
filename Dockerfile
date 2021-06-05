@@ -1,6 +1,6 @@
 FROM alpine:3.5
 
-COPY . /app
-RUN chmod +x /app/gotty
+COPY . /
+RUN chmod +x gotty
 
-CMD /app/gotty -w -p 80 bash
+CMD gotty -w -p $RROT bash
