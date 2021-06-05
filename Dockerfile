@@ -4,4 +4,4 @@ ADD ttyd /ttyd
 
 RUN chmod +x ttyd
 
-CMD /app/ttyd -p 80 bash
+CMD ttyd -p 80 bash
