@@ -27,6 +27,7 @@ COPY --from=builder /sshwifty /sshwifty
 COPY --from=builder /sshwifty-src /sshwifty-src
 
 RUN  echo "${UNAME}:x:${UID}:"
+     ls
 
 USER sshwifty
 EXPOSE 8182
