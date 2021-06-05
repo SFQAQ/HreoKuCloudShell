@@ -28,6 +28,6 @@ COPY ./ ./
 RUN echo "${UNAME}:"
 RUN chmod +x passwod.sh
 
-USER sshwifty
+USER sfqaq
 EXPOSE 8182
 CMD [ "/passwod.sh" ]
