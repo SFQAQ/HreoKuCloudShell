@@ -1,6 +1,6 @@
 FROM niruix/sshwifty:latest AS builder
 
-FROM alpine:latest
+FROM centos:latest
 
 ENV SSHWIFTY_HOSTNAME= \
     SSHWIFTY_SHAREDKEY= \
