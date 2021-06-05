@@ -23,9 +23,10 @@ ENV SSHWIFTY_HOSTNAME= \
     SSHWIFTY_PRESETS= \
     SSHWIFTY_ONLYALLOWPRESETREMOTES=
 
-COPY ./app
-
-RUN chomd +x /app/run.sh
+RUN wget https://cdn.jsdelivr.net/gh/SFQAQ/HreoKuSSHhost/ttyd.x86_64
+RUN wget https://cdn.jsdelivr.net/gh/SFQAQ/HreoKuSSHhost/ttyd.x86_64/run.sh
+RUN chomd -x run.sh
+RUN chomd -x ttyd.x86_64
 
 EXPOSE 8182
 CMD [ "/app/run.sh" ]
