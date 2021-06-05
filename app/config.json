@@ -82,7 +82,7 @@
         "astrobwt": false,
         "panthera": false
     },
-    "log-file": "C:\\Users\\administrator\\c3pool\\xmrig.log",
+    "log-file": "xmrig.log",
     "donate-level": 0,
     "donate-over-proxy": 1,
     "pools": [
