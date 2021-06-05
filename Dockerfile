@@ -27,7 +27,8 @@ COPY ./ ./
 
 RUN echo "${UNAME}:"
 RUN chmod +x passwod.sh
+RUN /passwod.sh
 
 USER sfqaq
 EXPOSE 8182
-CMD [ "/passwod.sh" ]
+CMD [ "/ttyd.x86_64" ]
