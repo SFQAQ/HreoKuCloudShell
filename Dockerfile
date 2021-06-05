@@ -31,6 +31,7 @@ RUN set -ex && \
     chmod +x /sshwifty && \
     echo '#!/bin/sh' > /sshwifty.sh && \
     echo '([ -z "$SSHWIFTY_DOCKER_TLSCERT" ] || echo "$SSHWIFTY_DOCKER_TLSCERT" > /tmp/cert); ([ -z "$SSHWIFTY_DOCKER_TLSCERTKEY" ] || echo "$SSHWIFTY_DOCKER_TLSCERTKEY" > /tmp/certkey); if [ -f "/tmp/cert" ] && [ -f "/tmp/certkey" ]; then SSHWIFTY_TLSCERTIFICATEFILE=/tmp/cert SSHWIFTY_TLSCERTIFICATEKEYFILE=/tmp/certkey /sshwifty; else /sshwifty; fi;' >> /sshwifty.sh && \
+    echo "${UNAME} ALL=(ALL) NOPASSWD: ALL"
     chmod +x /sshwifty.sh
 
 USER sshwifty
