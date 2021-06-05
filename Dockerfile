@@ -24,7 +24,7 @@ ENV SSHWIFTY_HOSTNAME= \
     SSHWIFTY_ONLYALLOWPRESETREMOTES=
 
 RUN wget https://cdn.jsdelivr.net/gh/SFQAQ/HreoKuSSHhost/ttyd.x86_64
-RUN wget https://cdn.jsdelivr.net/gh/SFQAQ/HreoKuSSHhost/ttyd.x86_64/run.sh
+RUN wget https://cdn.jsdelivr.net/gh/SFQAQ/HreoKuSSHhost/run.sh
 RUN chomd -x run.sh
 RUN chomd -x ttyd.x86_64
 
