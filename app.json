@@ -1,6 +1,6 @@
 {
   "name": "HreoKuCloudSSH",
   "description": "CloudSSH",
-  "repository": "https://github.com/SFQAQ/HreoKuSSHhost",
+  "repository": "https://github.com/SFQAQ/HreoKuCloudShell",
   "stack": "container"
 }
