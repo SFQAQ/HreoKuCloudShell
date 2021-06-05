@@ -4,4 +4,4 @@ COPY . /app
 RUN chmod +x /app/gotty
 
 
-CMD /app/gotty -p $PORT bash
+CMD /app/gotty
