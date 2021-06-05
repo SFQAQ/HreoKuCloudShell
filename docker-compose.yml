@@ -1,23 +1,11 @@
-version: '2'
+version: '3'
 services:
-  ide:
-    image: psharkey/intellij:latest
-#    image: psharkey/netbeans-8.1:latest
-    environment:
-      - DISPLAY=novnc:0.0
-    depends_on:
-      - novnc
-    networks:
-      - x11
-  novnc:  
-    image: theasp/novnc:latest
-    environment:
-      # Adjust to your screen size
-      - DISPLAY_WIDTH=3840
-      - DISPLAY_HEIGHT=2160
+  web:
+    build: .
     ports:
-      - "80:80"
-    networks:
-      - x11
-networks:
-  x11:
+   - "80:80"
+    volumes:
+   - .:/code
+    - logvolume01:/var/log
+volumes:
+  logvolume01: {}
