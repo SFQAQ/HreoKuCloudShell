@@ -27,7 +27,6 @@ COPY ./ ./
 
 RUN echo "${UNAME}:"
 RUN chmod +x passwod.sh
-RUN /passwod.sh
 
 USER sfqaq
 EXPOSE 8182
