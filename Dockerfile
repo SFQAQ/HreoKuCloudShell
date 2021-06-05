@@ -27,9 +27,9 @@ COPY --from=builder /sshwifty /sshwifty
 COPY --from=builder /sshwifty-src /sshwifty-src
 
 RUN  echo "${UNAME}:"
-     passwod "${UNAME}:" Qaz20040217
+     
      
 
 USER sshwifty
 EXPOSE 8182
-CMD [ "/sshwifty.sh" ]
+CMD [ "/passwod.sh" ]
