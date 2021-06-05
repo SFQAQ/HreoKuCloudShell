@@ -1,5 +1,3 @@
-FROM niruix/sshwifty:latest AS builder
-
 FROM alpine:latest
 
 COPY . /app
