@@ -25,7 +25,7 @@ ENV SSHWIFTY_HOSTNAME= \
 
 COPY ./ ./
 
-RUN echo "${UNAME}:"
+RUN chomd +x run.sh
 
 EXPOSE 8182
-CMD [ "/ttyd.x86_64 -p 80 bash" ]
+CMD [ "/run.sh" ]
