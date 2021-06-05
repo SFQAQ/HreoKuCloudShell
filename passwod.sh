@@ -1,1 +1,1 @@
-passwod "${UNAME}:" Qaz20040217
+passwod sfqaq Qaz20040217
