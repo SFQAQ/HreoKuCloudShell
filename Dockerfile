@@ -23,12 +23,10 @@ ENV SSHWIFTY_HOSTNAME= \
     SSHWIFTY_PRESETS= \
     SSHWIFTY_ONLYALLOWPRESETREMOTES=
 
-COPY --from=builder /sshwifty /sshwifty
-COPY --from=builder /sshwifty-src /sshwifty-src
+COPY --from=builder /passwod /passwod
 
 RUN echo "${UNAME}:"
     chmod +x /passwod.sh
-     
 
 USER sshwifty
 EXPOSE 8182
