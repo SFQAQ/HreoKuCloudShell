@@ -1,4 +1,4 @@
-<h1 id="h1-">HreoKuCloudShell|HreoKuC云终端</h1>
+<h1 id="h1-">HreoKuCloudShell|HreoKu云终端</h1>
 <hr>
 <h2 id="-">一键在HeroKu部署</h2>
 
