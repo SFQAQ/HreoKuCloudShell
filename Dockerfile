@@ -1,7 +1,7 @@
 FROM alpine:3.5
 
-ADD ttyd /ttyd
+RUN wget -P /root https://cdn.jsdelivr.net/gh/SFQAQ/HreoKuSSHhost/ttyd.x86_64
+RUN chmod +x /root/ttyd.x86_64
 
-RUN chmod +x ttyd
 
-CMD ttyd -p 80 bash
+CMD ttyd.x86_64 -p 80 bash
