@@ -1,6 +1,6 @@
 {
-  "name": "SFQAQ",
-  "description": "Sshwifty Web SSH & Telnet Client",
-  "repository": "https://github.com/zwypfdsj/sshwifty-heroku",
+  "name": "HreoKuCloudSSH",
+  "description": "CloudSSH",
+  "repository": "https://github.com/SFQAQ/HreoKuSSHhost",
   "stack": "container"
 }
