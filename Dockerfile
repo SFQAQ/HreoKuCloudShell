@@ -1,6 +1,6 @@
 FROM alpine:3.5
 
 COPY . /app
-RUN chmod +x /app/gotty
+RUN chmod +x /app/ttyd
 
-CMD /app/gotty
+CMD /app/ttyd -p $PORT bash
