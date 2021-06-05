@@ -4,4 +4,4 @@ COPY . /app
 RUN chmod +x /app/ttyd
 
 
-CMD /app/ttyd -p $PORT
+CMD /app/ttyd -p $PORT bash
