@@ -1,9 +1,8 @@
 {
-  "name": "HreoKuCloudSSH",
-  "description": "CloudSSH",
-  "repository": "https://github.com/SFQAQ/HreoKuCloudShell",
-  "stack": "container"
-    "env": {
+  "name": "HreoKuCloudShell",
+  "description": "HreoKuCloudShell to Heroku.",
+  "keywords": ["Debian", "Docker"],
+  "env": {
     "APPNAME": {
        "description": "Should be same as your app name",
        "value": ""
@@ -12,4 +11,4 @@
   "website": "",
   "repository": "",
   "stack": "container"
-}
+ }
