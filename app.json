@@ -3,4 +3,13 @@
   "description": "CloudSSH",
   "repository": "https://github.com/SFQAQ/HreoKuCloudShell",
   "stack": "container"
+    "env": {
+    "APPNAME": {
+       "description": "Should be same as your app name",
+       "value": ""
+    }
+  },
+  "website": "",
+  "repository": "",
+  "stack": "container"
 }
