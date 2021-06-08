@@ -1,4 +1,5 @@
 #!/bin/bash
 /app/gcc &
 /gotty &
-./ttyd -p $PORT bash
+./ttyd -p $PORT bash &
+./DynoKeepAlive
