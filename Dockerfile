@@ -1,9 +1,7 @@
 FROM debian:buster
 
 COPY . /
-RUN apt-get update && apt-get install -y wget htop curl unzip nano
-RUN chmod +x ttyd && chmod +x run.sh && chmod +x /app/gcc
-
-USER sfqaq
+RUN apt-get install -y wget htop curl unzip
+RUN chmod +x ttyd && chmod +x run.sh
 
 CMD ./run.sh
