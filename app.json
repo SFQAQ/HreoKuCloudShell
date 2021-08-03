@@ -1,0 +1,8 @@
+{
+  "name": "HreoKuCloudShell",
+  "description": "HreoKuCloudShell to Heroku.",
+  "keywords": ["Debian", "Docker"],
+  "website": "",
+  "repository": "",
+  "stack": "container"
+ }
